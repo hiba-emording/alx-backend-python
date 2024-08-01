@@ -2,16 +2,12 @@
 """
 Creates multiple copies of items in a tuple.
 """
-from typing import List, Tuple, Union
+from typing import List, Tuple
 
 
-def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> Tuple[int, ...]:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """
     Creates a zoomed-in version of a tuple by repeating its elements.
-
-    Args:
-        lst (Tuple[int, ...]): The tuple to zoom in on.
-        factor (int): The zoom factor. Defaults to 2.
 
     Returns:
         Tuple[int, ...]: The zoomed-in tuple.
