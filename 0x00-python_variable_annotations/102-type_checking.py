@@ -12,11 +12,11 @@ def zoom_array(lst: Tuple, factor: int = 2) -> List:
     Returns:
         Tuple[int, ...]: The zoomed-in tuple.
     """
-    zoomed_in: List[int] = [
+    zoomed_in: List = [
         item for item in lst
-        for i in range(factor)
+        for i in range(int(factor))
     ]
-    return tuple(zoomed_in)
+    return zoomed_in
 
 
 array = (12, 72, 91)
